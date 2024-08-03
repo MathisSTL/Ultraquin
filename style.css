@@ -1,0 +1,41 @@
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #f5f5f5;
+}
+
+.taquin-container {
+    display: grid;
+    grid-template-columns: repeat(6, 100px);
+    grid-template-rows: repeat(6, 100px);
+    gap: 5px;
+}
+
+.tile {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 24px;
+    font-weight: bold;
+    background-color: #8b4513;
+    color: #000;
+    border-radius: 10px;
+    cursor: pointer;
+    user-select: none;
+}
+
+.tile.blank {
+    background-color: #f5deb3;
+    cursor: default;
+}
+
+.bravo-message {
+    margin-top: 20px;
+    font-size: 32px;
+    font-weight: bold;
+    color: green;
+}
